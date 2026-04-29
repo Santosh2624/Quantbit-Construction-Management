@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:worker_name",
  "creation": "2026-04-24 11:19:30.776331",
@@ -29,7 +30,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-29 11:44:42.268293",
+ "modified": "2026-04-29 14:51:22.339564",
  "modified_by": "Administrator",
  "module": "Quantbit Construction Management",
  "name": "Worker Master",

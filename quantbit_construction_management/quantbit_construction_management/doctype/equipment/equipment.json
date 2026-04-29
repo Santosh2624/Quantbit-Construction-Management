@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:equipment_name",
  "creation": "2026-04-24 11:22:13.425604",
@@ -39,7 +40,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-29 11:44:48.981795",
+ "modified": "2026-04-29 14:51:02.335593",
  "modified_by": "Administrator",
  "module": "Quantbit Construction Management",
  "name": "Equipment",

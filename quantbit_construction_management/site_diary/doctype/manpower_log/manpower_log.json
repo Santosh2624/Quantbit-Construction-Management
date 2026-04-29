@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-29 15:23:48.501632",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tradecategory",
+  "subcontractor",
+  "gang_no",
+  "column_break_kijs",
+  "work_area",
+  "activity",
+  "hours_worked",
+  "overtime_hours",
+  "column_break_wnrx",
+  "skilled",
+  "unskilled",
+  "supervisors",
+  "total"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "tradecategory",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Trade/Category",
+   "options": "Worker Type",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "subcontractor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Subcontractor",
+   "options": "Supplier"
+  },
+  {
+   "columns": 1,
+   "fieldname": "gang_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Gang No."
+  },
+  {
+   "columns": 1,
+   "fieldname": "skilled",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Skilled Count"
+  },
+  {
+   "columns": 1,
+   "fieldname": "unskilled",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Unskilled Count"
+  },
+  {
+   "columns": 1,
+   "fieldname": "supervisors",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Supervisors"
+  },
+  {
+   "columns": 1,
+   "fieldname": "total",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total"
+  },
+  {
+   "columns": 1,
+   "fieldname": "work_area",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Work Area"
+  },
+  {
+   "columns": 1,
+   "fieldname": "activity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Activity"
+  },
+  {
+   "columns": 1,
+   "default": "8",
+   "fieldname": "hours_worked",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Hours Worked"
+  },
+  {
+   "columns": 1,
+   "fieldname": "overtime_hours",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Overtime Hours"
+  },
+  {
+   "fieldname": "column_break_wnrx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_kijs",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-04-29 16:19:39.810326",
+ "modified_by": "Administrator",
+ "module": "Site Diary",
+ "name": "Manpower Log",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

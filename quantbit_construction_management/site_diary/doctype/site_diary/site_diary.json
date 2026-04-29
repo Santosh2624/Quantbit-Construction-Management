@@ -1,0 +1,253 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:DIARY-{YYYY}-{MM}-{DD}",
+ "creation": "2026-04-29 15:48:44.762298",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_9z3m",
+  "diary_no",
+  "project",
+  "site_date",
+  "day_no_of_contract",
+  "shift",
+  "site_engineer",
+  "column_break_qhff",
+  "weather_am",
+  "weather_pm",
+  "max_temp",
+  "min_temp",
+  "wind_speed_kmh",
+  "column_break_wqzx",
+  "general_remarks",
+  "site_photos",
+  "status",
+  "column_break_pcsi",
+  "work_stopped",
+  "stoppage_hours",
+  "stoppage_reason",
+  "section_break_wcbr",
+  "material_deliveries",
+  "section_break_rgpc",
+  "manpower_log",
+  "section_break_lqbc",
+  "equipment_log",
+  "section_break_decv",
+  "visitors",
+  "section_break_xpve",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_9z3m",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "diary_no",
+   "fieldtype": "Data",
+   "label": "Diary No."
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "site_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Site Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "day_no_of_contract",
+   "fieldtype": "Int",
+   "label": "Day No. of Contract"
+  },
+  {
+   "default": "Day",
+   "fieldname": "shift",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Shift",
+   "options": "\nDay\nNight\nBoth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "site_engineer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Site Engineer",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "manpower_log",
+   "fieldtype": "Table",
+   "label": "Manpower Log",
+   "options": "Manpower Log"
+  },
+  {
+   "fieldname": "equipment_log",
+   "fieldtype": "Table",
+   "label": "Equipment Log",
+   "options": "Site Equipment Log"
+  },
+  {
+   "fieldname": "material_deliveries",
+   "fieldtype": "Table",
+   "label": "Material Deliveries",
+   "options": "Site Material Delivery"
+  },
+  {
+   "fieldname": "visitors",
+   "fieldtype": "Table",
+   "label": "Visitors",
+   "options": "Site Visitor Log"
+  },
+  {
+   "default": "Clear",
+   "fieldname": "weather_am",
+   "fieldtype": "Select",
+   "label": "Weather (AM)",
+   "options": "\nClear\nPartly\nCloudy\nOvercast\nLight Rain\nHeavyRain\nStormy Fog\nDust Storm",
+   "reqd": 1
+  },
+  {
+   "default": "Clear",
+   "fieldname": "weather_pm",
+   "fieldtype": "Select",
+   "label": "Weather (PM)",
+   "options": "\nClear\nPartly Cloudy\nOvercast\nLight Rain\nHeavy Rain\nStormy\nFog\nDust\nStorm",
+   "reqd": 1
+  },
+  {
+   "fieldname": "max_temp",
+   "fieldtype": "Float",
+   "label": "Max Temp"
+  },
+  {
+   "fieldname": "min_temp",
+   "fieldtype": "Float",
+   "label": "Min Temp"
+  },
+  {
+   "fieldname": "wind_speed_kmh",
+   "fieldtype": "Float",
+   "label": "Wind Speed (km/h)"
+  },
+  {
+   "default": "0",
+   "fieldname": "work_stopped",
+   "fieldtype": "Check",
+   "label": "Work Stopped"
+  },
+  {
+   "depends_on": "eval:doc.work_stopped==1;",
+   "fieldname": "stoppage_reason",
+   "fieldtype": "Text",
+   "label": "Stoppage Reason"
+  },
+  {
+   "depends_on": "eval:doc.work_stopped==1;",
+   "fieldname": "stoppage_hours",
+   "fieldtype": "Float",
+   "label": "Stoppage Hours"
+  },
+  {
+   "fieldname": "general_remarks",
+   "fieldtype": "Text",
+   "label": "General Remarks"
+  },
+  {
+   "fieldname": "site_photos",
+   "fieldtype": "Attach",
+   "label": "Site Photos"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nDraft\nSubmitted\nApproved by PM\nAcknowledged by Consultant",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qhff",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_pcsi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_lqbc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_wcbr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_rgpc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_decv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_wqzx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Site Diary",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_xpve",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-29 17:40:45.830311",
+ "modified_by": "Administrator",
+ "module": "Site Diary",
+ "name": "Site Diary",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

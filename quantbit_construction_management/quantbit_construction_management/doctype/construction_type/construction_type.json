@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:construction_type",
  "creation": "2026-04-24 11:11:57.831367",
@@ -36,7 +37,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-29 11:44:26.390105",
+ "modified": "2026-04-29 14:50:31.259871",
  "modified_by": "Administrator",
  "module": "Quantbit Construction Management",
  "name": "Construction Type",
