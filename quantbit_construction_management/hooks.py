@@ -21,6 +21,29 @@ app_license = "mit"
 # 	}
 # ]
 
+doctype_js = {
+  "Project" : "public/js/Project.js"
+}
+
+fixtures = [
+
+    {
+        "doctype": "Custom Field",
+        "filters": [
+            ["dt", "in", ["Task", "Project"]]
+        ]
+    },
+
+    {
+        "doctype": "UOM"
+    },
+
+    {
+        "doctype": "UOM Conversion Rate"
+    }
+
+]
+
 # Includes in <head>
 # ------------------
 

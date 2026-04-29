@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:DPR-{#####}",
+ "creation": "2026-04-28 14:49:35.638240",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "column_break_rqzw",
+  "date",
+  "section_break_xats",
+  "task_template",
+  "section_break_dkdh",
+  "dpr_activity_progress"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_rqzw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_xats",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "task_template",
+   "fieldtype": "Table",
+   "label": "Task Template",
+   "options": "Task Summary"
+  },
+  {
+   "fieldname": "section_break_dkdh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "dpr_activity_progress",
+   "fieldtype": "Table",
+   "label": "DPR Activity Progress",
+   "options": "DPR Activity Progress"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-29 11:45:11.153889",
+ "modified_by": "Administrator",
+ "module": "Quantbit Construction Management",
+ "name": "Daily Progress Tracking",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

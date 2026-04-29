@@ -1,0 +1,265 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "UOM Conversion Rate",
+  "modified": "2026-04-29 13:45:05.795307",
+  "name": "UOM Conversion Rate",
+  "uom_conversion_table": [
+   {
+    "conversion_factor": "25.4",
+    "conversion_uom": "Milimeter",
+    "uom": "Inch"
+   },
+   {
+    "conversion_factor": "2.54",
+    "conversion_uom": "Centimeter",
+    "uom": "Inch"
+   },
+   {
+    "conversion_factor": "12",
+    "conversion_uom": "Inch",
+    "uom": "Foot"
+   },
+   {
+    "conversion_factor": "0.3048",
+    "conversion_uom": "Meter",
+    "uom": "Foot"
+   },
+   {
+    "conversion_factor": "3",
+    "conversion_uom": "Foot",
+    "uom": "Yard"
+   },
+   {
+    "conversion_factor": "0.9144",
+    "conversion_uom": "Meter",
+    "uom": "Yard"
+   },
+   {
+    "conversion_factor": "3.2808",
+    "conversion_uom": "Foot",
+    "uom": "Meter"
+   },
+   {
+    "conversion_factor": "39.37",
+    "conversion_uom": "Inch",
+    "uom": "Meter"
+   },
+   {
+    "conversion_factor": "1000",
+    "conversion_uom": "Meter",
+    "uom": "Kilometer"
+   },
+   {
+    "conversion_factor": "0.6214",
+    "conversion_uom": "Mile",
+    "uom": "Kilometer"
+   },
+   {
+    "conversion_factor": "1.6093",
+    "conversion_uom": "Kilometer",
+    "uom": "Mile"
+   },
+   {
+    "conversion_factor": "5280",
+    "conversion_uom": "Foot",
+    "uom": "Mile"
+   },
+   {
+    "conversion_factor": "645.16",
+    "conversion_uom": "Square Milimeter",
+    "uom": "Square Inch"
+   },
+   {
+    "conversion_factor": "6.45",
+    "conversion_uom": "Square Centimeter",
+    "uom": "Square Inch"
+   },
+   {
+    "conversion_factor": "144",
+    "conversion_uom": "Square Inch",
+    "uom": "Square Foot"
+   },
+   {
+    "conversion_factor": "0.0929",
+    "conversion_uom": "Square Meter",
+    "uom": "Square Foot"
+   },
+   {
+    "conversion_factor": "9",
+    "conversion_uom": "Square Foot",
+    "uom": "Square Yard"
+   },
+   {
+    "conversion_factor": "0.8361",
+    "conversion_uom": "Square Meter",
+    "uom": "Square Yard"
+   },
+   {
+    "conversion_factor": "10.7639",
+    "conversion_uom": "Square Foot",
+    "uom": "Square Meter"
+   },
+   {
+    "conversion_factor": "1.196",
+    "conversion_uom": "Square Yard",
+    "uom": "Square Meter"
+   },
+   {
+    "conversion_factor": "43560",
+    "conversion_uom": "Square Foot",
+    "uom": "Acre"
+   },
+   {
+    "conversion_factor": "4046.86",
+    "conversion_uom": "Square Meter",
+    "uom": "Acre"
+   },
+   {
+    "conversion_factor": "0.4047",
+    "conversion_uom": "Hectare",
+    "uom": "Acre"
+   },
+   {
+    "conversion_factor": "10000",
+    "conversion_uom": "Square Meter",
+    "uom": "Hectare"
+   },
+   {
+    "conversion_factor": "2.471",
+    "conversion_uom": "Acre",
+    "uom": "Hectare"
+   },
+   {
+    "conversion_factor": "1728",
+    "conversion_uom": "Cubic Inch",
+    "uom": "Cubic Foot"
+   },
+   {
+    "conversion_factor": "0.0283",
+    "conversion_uom": "Cubic Meter",
+    "uom": "Cubic Foot"
+   },
+   {
+    "conversion_factor": "27",
+    "conversion_uom": "Cubic Foot",
+    "uom": "Cubic Yard"
+   },
+   {
+    "conversion_factor": "0.7646",
+    "conversion_uom": "Cubic Meter",
+    "uom": "Cubic Yard"
+   },
+   {
+    "conversion_factor": "35.315",
+    "conversion_uom": "Cubic Foot",
+    "uom": "Cubic Meter"
+   },
+   {
+    "conversion_factor": "1.308",
+    "conversion_uom": "Cubic Yard",
+    "uom": "Cubic Meter"
+   },
+   {
+    "conversion_factor": "1000",
+    "conversion_uom": "Litre",
+    "uom": "Cubic Meter"
+   },
+   {
+    "conversion_factor": "264.17",
+    "conversion_uom": "Grain/Gallon (US)",
+    "uom": "Cubic Meter"
+   },
+   {
+    "conversion_factor": "0.0353",
+    "conversion_uom": "Cubic Foot",
+    "uom": "Liter"
+   },
+   {
+    "conversion_factor": "0.264",
+    "conversion_uom": "Grain/Gallon (US)",
+    "uom": "Liter"
+   },
+   {
+    "conversion_factor": "3.785",
+    "conversion_uom": "Liter",
+    "uom": "Grain/Gallon (US)"
+   },
+   {
+    "conversion_factor": "0.4536",
+    "conversion_uom": "Kg",
+    "uom": "Pound"
+   },
+   {
+    "conversion_factor": "2.2046",
+    "conversion_uom": "Pound",
+    "uom": "Kg"
+   },
+   {
+    "conversion_factor": "1000",
+    "conversion_uom": "Kg",
+    "uom": "Metric Tonne"
+   },
+   {
+    "conversion_factor": "2204.6",
+    "conversion_uom": "Pound",
+    "uom": "Metric Tonne"
+   },
+   {
+    "conversion_factor": "2000",
+    "conversion_uom": "Pound",
+    "uom": "US Ton"
+   },
+   {
+    "conversion_factor": "907.18",
+    "conversion_uom": "Kg",
+    "uom": "US Ton"
+   },
+   {
+    "conversion_factor": "50",
+    "conversion_uom": "Kg",
+    "uom": "Cement Bag"
+   },
+   {
+    "conversion_factor": "110.23",
+    "conversion_uom": "Pound",
+    "uom": "Cement Bag"
+   },
+   {
+    "conversion_factor": "6.8948",
+    "conversion_uom": "kPa",
+    "uom": "psi"
+   },
+   {
+    "conversion_factor": "0.0703",
+    "conversion_uom": "Kilogram/Square Centimeter",
+    "uom": "psi"
+   },
+   {
+    "conversion_factor": "14.223",
+    "conversion_uom": "psi",
+    "uom": "Kilogram/Square Centimeter"
+   },
+   {
+    "conversion_factor": "10",
+    "conversion_uom": "Kilogram/Square Centimeter",
+    "uom": "Mpa"
+   },
+   {
+    "conversion_factor": "145.038",
+    "conversion_uom": "psi",
+    "uom": "Mpa"
+   },
+   {
+    "conversion_factor": "100",
+    "conversion_uom": "kPa",
+    "uom": "Bar"
+   },
+   {
+    "conversion_factor": "14.5",
+    "conversion_uom": "psi",
+    "uom": "Bar"
+   }
+  ]
+ }
+]

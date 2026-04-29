@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-27 17:44:32.709394",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "uom",
+  "column_break_ochw",
+  "conversion_uom",
+  "column_break_gayz",
+  "conversion_factor"
+ ],
+ "fields": [
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ochw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "conversion_uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Conversion UOM ",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_gayz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "conversion_factor",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Conversion Factor",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-04-29 11:44:05.103091",
+ "modified_by": "Administrator",
+ "module": "Quantbit Construction Management",
+ "name": "UOM Conversion Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

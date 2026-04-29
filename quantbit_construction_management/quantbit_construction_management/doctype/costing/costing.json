@@ -1,0 +1,156 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:CS-{#####}",
+ "creation": "2026-04-24 11:32:56.607469",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "task_tab",
+  "section_break_kdny",
+  "task",
+  "section_break_vnst",
+  "costing_task",
+  "costing_tab",
+  "section_break_wxqi",
+  "get_data",
+  "costing_work_details",
+  "section_break_awza",
+  "get_costing",
+  "worker_costing",
+  "worker_total_cost",
+  "equipment_costing",
+  "equipment_total_cost",
+  "material_costing",
+  "material_total_cost",
+  "section_break_famu",
+  "total_cost"
+ ],
+ "fields": [
+  {
+   "fieldname": "task_tab",
+   "fieldtype": "Tab Break",
+   "label": "Task"
+  },
+  {
+   "fieldname": "section_break_kdny",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "task",
+   "fieldtype": "Table",
+   "label": "Task",
+   "options": "Task Summary"
+  },
+  {
+   "fieldname": "section_break_vnst",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "costing_task",
+   "fieldtype": "Table",
+   "label": "Costing Task",
+   "options": "Costing Task"
+  },
+  {
+   "fieldname": "costing_tab",
+   "fieldtype": "Tab Break",
+   "label": "Costing"
+  },
+  {
+   "fieldname": "section_break_wxqi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "get_data",
+   "fieldtype": "Button",
+   "label": "Get Data"
+  },
+  {
+   "fieldname": "costing_work_details",
+   "fieldtype": "Table",
+   "label": "Costing Work Details",
+   "options": "Costing Work Details",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_awza",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "get_costing",
+   "fieldtype": "Button",
+   "label": "Get Costing"
+  },
+  {
+   "fieldname": "worker_costing",
+   "fieldtype": "Table",
+   "label": "Worker Costing",
+   "options": "Worker Costing"
+  },
+  {
+   "fieldname": "worker_total_cost",
+   "fieldtype": "Float",
+   "label": "Worker Total Cost"
+  },
+  {
+   "fieldname": "equipment_costing",
+   "fieldtype": "Table",
+   "label": "Equipment Costing",
+   "options": "Equipment Costing"
+  },
+  {
+   "fieldname": "equipment_total_cost",
+   "fieldtype": "Float",
+   "label": "Equipment Total Cost"
+  },
+  {
+   "fieldname": "material_costing",
+   "fieldtype": "Table",
+   "label": "Material Costing",
+   "options": "Material Costing"
+  },
+  {
+   "fieldname": "material_total_cost",
+   "fieldtype": "Float",
+   "label": "Material Total Cost"
+  },
+  {
+   "fieldname": "section_break_famu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Float",
+   "label": "Total Cost"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-29 14:10:14.327399",
+ "modified_by": "Administrator",
+ "module": "Quantbit Construction Management",
+ "name": "Costing",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
