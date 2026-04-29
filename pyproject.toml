@@ -4,7 +4,7 @@ authors = [
     { name = "QTPL", email = "support@erpdata.in"}
 ]
 description = "construction management system"
-requires-python = ">=3.14"
+requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]
 dependencies = [
