@@ -1,0 +1,234 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:R-.YYYY.-",
+ "creation": "2026-04-30 14:32:39.812947",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "column_break_tlpt",
+  "status",
+  "section_identity",
+  "project",
+  "priority",
+  "subject",
+  "raised_by",
+  "col_break_ident1",
+  "discipline",
+  "related_drawing",
+  "directed_to",
+  "response_by",
+  "col_break_ident2",
+  "impact_on_cost",
+  "linked_vo",
+  "impact_on_time",
+  "raised_date",
+  "required_by",
+  "response_date",
+  "section_attachments",
+  "attachments",
+  "section_notes",
+  "query",
+  "response",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "R-.YYYY.-"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Mandatory\ndefault Open",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_identity",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "Mandatory\ndefault Normal"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject",
+   "reqd": 1
+  },
+  {
+   "fieldname": "raised_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Raised By",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "col_break_ident1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "discipline",
+   "fieldtype": "Select",
+   "label": "Discipline",
+   "options": "Mandatory\ndefault Architectural"
+  },
+  {
+   "fieldname": "related_drawing",
+   "fieldtype": "Link",
+   "label": "Related Drawing",
+   "options": "Drawing Register"
+  },
+  {
+   "fieldname": "directed_to",
+   "fieldtype": "Select",
+   "label": "Directed To",
+   "options": "Mandatory\ndefault Architect"
+  },
+  {
+   "fieldname": "response_by",
+   "fieldtype": "Link",
+   "label": "Response By",
+   "options": "User"
+  },
+  {
+   "fieldname": "col_break_ident2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "impact_on_cost",
+   "fieldtype": "Check",
+   "label": "Cost Impact"
+  },
+  {
+   "fieldname": "linked_vo",
+   "fieldtype": "Data",
+   "label": "Linked Variation Order"
+  },
+  {
+   "default": "0",
+   "fieldname": "impact_on_time",
+   "fieldtype": "Check",
+   "label": "Time Impact"
+  },
+  {
+   "fieldname": "raised_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date Raised",
+   "reqd": 1
+  },
+  {
+   "fieldname": "required_by",
+   "fieldtype": "Date",
+   "label": "Response Required By"
+  },
+  {
+   "fieldname": "response_date",
+   "fieldtype": "Date",
+   "label": "Response Date"
+  },
+  {
+   "fieldname": "section_attachments",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Attach",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "section_notes",
+   "fieldtype": "Section Break",
+   "label": "Notes & Justification"
+  },
+  {
+   "fieldname": "query",
+   "fieldtype": "Long Text",
+   "label": "Query",
+   "reqd": 1
+  },
+  {
+   "fieldname": "response",
+   "fieldtype": "Long Text",
+   "label": "Response"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "RFI",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_tlpt",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-30 14:45:56.190765",
+ "modified_by": "Administrator",
+ "module": "Document Control",
+ "name": "RFI",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

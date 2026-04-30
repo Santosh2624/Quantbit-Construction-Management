@@ -1,0 +1,183 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2026-04-30 14:20:54.398610",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_identity",
+  "item_type",
+  "item_no",
+  "item_code",
+  "col_break_ident1",
+  "unit",
+  "quantity",
+  "cost_code",
+  "col_break_ident2",
+  "executed_qty",
+  "is_ps",
+  "ps_replaced",
+  "section_financial",
+  "unit_rate",
+  "amount",
+  "col_break_fin1",
+  "executed_amount",
+  "balance_qty",
+  "section_notes",
+  "description",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_identity",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "columns": 1,
+   "fieldname": "item_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Item Type",
+   "options": "Mandatory\ndefault Material"
+  },
+  {
+   "columns": 1,
+   "fieldname": "item_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item No",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "col_break_ident1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "unit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Unit",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "BOQ Quantity",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "cost_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cost Code"
+  },
+  {
+   "fieldname": "col_break_ident2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "executed_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Executed QTY"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_ps",
+   "fieldtype": "Check",
+   "label": "Provisional Sum"
+  },
+  {
+   "default": "0",
+   "fieldname": "ps_replaced",
+   "fieldtype": "Check",
+   "label": "Ps Replaced"
+  },
+  {
+   "fieldname": "section_financial",
+   "fieldtype": "Section Break",
+   "label": "Financial Summary"
+  },
+  {
+   "columns": 1,
+   "fieldname": "unit_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Unit Rate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "col_break_fin1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "executed_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Executed Amount"
+  },
+  {
+   "columns": 1,
+   "fieldname": "balance_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Balance QTY"
+  },
+  {
+   "fieldname": "section_notes",
+   "fieldtype": "Section Break",
+   "label": "Notes & Justification"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-04-30 14:52:13.262004",
+ "modified_by": "Administrator",
+ "module": "BOQ",
+ "name": "BOQ Item",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

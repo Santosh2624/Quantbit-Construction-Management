@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-30 14:35:54.458510",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "revision",
+  "revision_date",
+  "description",
+  "column_break_jokl",
+  "issued_by",
+  "status",
+  "transmittal_no",
+  "file"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "revision",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Revision"
+  },
+  {
+   "columns": 1,
+   "fieldname": "revision_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Revision Date"
+  },
+  {
+   "columns": 2,
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Change Description"
+  },
+  {
+   "columns": 1,
+   "fieldname": "issued_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Issued By",
+   "options": "User"
+  },
+  {
+   "columns": 1,
+   "fieldname": "file",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Revision File"
+  },
+  {
+   "columns": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Issued for Construction Approved\nApproved with Comments Superseded\nRejected"
+  },
+  {
+   "columns": 1,
+   "fieldname": "transmittal_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Transmittal No.",
+   "options": "Transmittal"
+  },
+  {
+   "fieldname": "column_break_jokl",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-04-30 14:50:26.526980",
+ "modified_by": "Administrator",
+ "module": "Document Control",
+ "name": "Drawing Revision",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

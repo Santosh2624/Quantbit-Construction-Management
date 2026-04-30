@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:revision_no",
+ "creation": "2026-04-30 14:27:21.198386",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_identity",
+  "project",
+  "revision_no",
+  "original_boq",
+  "col_break_ident1",
+  "revised_by",
+  "revision_date",
+  "linked_vo",
+  "reason",
+  "col_break_ident2",
+  "previous_value",
+  "revised_value",
+  "delta_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_identity",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "revision_no",
+   "fieldtype": "Data",
+   "label": "Revision No",
+   "unique": 1
+  },
+  {
+   "fieldname": "col_break_ident1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "original_boq",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Original BOQ",
+   "options": "Bill of Quantities",
+   "reqd": 1
+  },
+  {
+   "fieldname": "revised_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Revised By",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "col_break_ident2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Text",
+   "label": "Reason For Revision",
+   "reqd": 1
+  },
+  {
+   "fieldname": "linked_vo",
+   "fieldtype": "Data",
+   "label": "Linked Variation Order"
+  },
+  {
+   "fieldname": "revision_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Revision Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "previous_value",
+   "fieldtype": "Currency",
+   "label": "Previous Contract Value"
+  },
+  {
+   "fieldname": "revised_value",
+   "fieldtype": "Currency",
+   "label": "Revised Contract Value"
+  },
+  {
+   "fieldname": "delta_amount",
+   "fieldtype": "Currency",
+   "label": "Delta Amount"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-30 14:43:23.472565",
+ "modified_by": "Administrator",
+ "module": "BOQ",
+ "name": "BOQ Revision",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
