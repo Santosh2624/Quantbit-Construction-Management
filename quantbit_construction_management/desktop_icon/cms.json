@@ -7,14 +7,15 @@
  "hidden": 0,
  "icon_type": "Link",
  "idx": 0,
- "label": "Construction Management System",
+ "label": "CMS",
  "link_to": "Construction Management System",
  "link_type": "Workspace Sidebar",
- "modified": "2026-05-02 11:43:32.795011",
+ "modified": "2026-05-02 17:13:17.253284",
  "modified_by": "Administrator",
- "name": "Construction Management System",
+ "name": "CMS",
  "owner": "Administrator",
  "restrict_removal": 0,
  "roles": [],
+ "sidebar": "Construction Management System",
  "standard": 1
 }
