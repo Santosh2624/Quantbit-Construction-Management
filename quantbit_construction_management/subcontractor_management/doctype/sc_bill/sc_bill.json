@@ -1,50 +1,48 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:bill_no",
+ "autoname": "naming_series:",
  "creation": "2026-05-04 10:47:57.970147",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "status",
   "section_identity",
-  "project",
   "bill_no",
   "subcontract",
-  "col_break_ident1",
   "work_order",
+  "project",
+  "naming_series",
+  "col_break_ident1",
   "subcontractor",
-  "bill_items",
+  "bill_date",
+  "period_from",
+  "period_to",
+  "status",
   "col_break_ident2",
+  "gross_amount",
   "advance_recovery",
   "retention",
-  "bill_date",
-  "section_financial",
-  "gross_amount",
-  "col_break_fin1",
   "net_amount",
-  "section_periods",
-  "period_from",
-  "col_break_period1",
-  "period_to",
-  "section_attachments",
   "supporting_docs",
+  "section_break_qzei",
+  "bill_items",
+  "section_attachments",
   "amended_from"
  ],
  "fields": [
   {
+   "default": "Submitted",
    "fieldname": "status",
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Status",
-   "options": "default Submitted",
+   "options": "\nSubmitted\nUnder Review\nCertified\nRejected\nPartially Certified",
    "reqd": 1
   },
   {
    "fieldname": "section_identity",
-   "fieldtype": "Section Break",
-   "label": "Details"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "project",
@@ -56,17 +54,18 @@
    "fieldname": "bill_no",
    "fieldtype": "Data",
    "label": "Sc Bill No.",
+   "read_only": 1,
    "unique": 1
   },
   {
    "fieldname": "subcontract",
    "fieldtype": "Data",
-   "label": "Subcontract"
+   "label": "Subcontract",
+   "reqd": 1
   },
   {
    "fieldname": "col_break_ident1",
-   "fieldtype": "Column Break",
-   "label": "Col Break Ident1"
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "work_order",
@@ -80,77 +79,58 @@
    "options": "Supplier"
   },
   {
-   "fieldname": "bill_items",
-   "fieldtype": "Data",
-   "label": "Bill Items"
-  },
-  {
    "fieldname": "col_break_ident2",
-   "fieldtype": "Column Break",
-   "label": "Col Break Ident2"
+   "fieldtype": "Column Break"
   },
   {
+   "default": "0",
    "fieldname": "advance_recovery",
    "fieldtype": "Currency",
    "label": "Advance Recovery"
   },
   {
+   "default": "0",
    "fieldname": "retention",
    "fieldtype": "Currency",
    "label": "Retention"
   },
   {
+   "default": "Today",
    "fieldname": "bill_date",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Bill Date"
+   "label": "Bill Date",
+   "reqd": 1
   },
   {
-   "fieldname": "section_financial",
-   "fieldtype": "Section Break",
-   "label": "Financial Summary (Auto-computed)"
-  },
-  {
+   "default": "0",
    "fieldname": "gross_amount",
    "fieldtype": "Currency",
    "label": "Gross Amount"
   },
   {
-   "fieldname": "col_break_fin1",
-   "fieldtype": "Column Break",
-   "label": "Col Break Fin1"
-  },
-  {
+   "default": "0",
    "fieldname": "net_amount",
    "fieldtype": "Currency",
    "label": "Net Amount"
   },
   {
-   "fieldname": "section_periods",
-   "fieldtype": "Section Break",
-   "label": "Period Distribution"
-  },
-  {
    "fieldname": "period_from",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Period From"
-  },
-  {
-   "fieldname": "col_break_period1",
-   "fieldtype": "Column Break",
-   "label": "Col Break Period1"
+   "label": "Period From",
+   "reqd": 1
   },
   {
    "fieldname": "period_to",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Period To"
+   "label": "Period To",
+   "reqd": 1
   },
   {
    "fieldname": "section_attachments",
-   "fieldtype": "Section Break",
-   "label": "Attachments"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "supporting_docs",
@@ -166,17 +146,34 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "SCB-.YYYY.-"
+  },
+  {
+   "fieldname": "section_break_qzei",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bill_items",
+   "fieldtype": "Table",
+   "label": "Bill Items",
+   "options": "SC Bill Item",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-05-04 10:47:57.970147",
+ "modified": "2026-05-04 12:37:20.397298",
  "modified_by": "Administrator",
  "module": "Subcontractor Management",
  "name": "SC Bill",
- "naming_rule": "By fieldname",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

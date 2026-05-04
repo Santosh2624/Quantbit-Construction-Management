@@ -1,44 +1,46 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:wo_no",
+ "autoname": "naming_series:",
  "creation": "2026-05-04 10:47:45.189890",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "status",
   "section_identity",
-  "project",
   "wo_no",
   "subcontract",
-  "col_break_ident1",
+  "project",
   "subcontractor",
-  "scope",
-  "wo_items",
-  "col_break_ident2",
-  "method_statement",
-  "shop_drawing",
+  "naming_series",
+  "col_break_ident1",
   "issue_date",
   "start_date",
   "end_date",
-  "section_financial",
+  "scope",
+  "col_break_ident2",
   "wo_value",
+  "status",
+  "method_statement",
+  "shop_drawing",
+  "section_break_fhfs",
+  "wo_items",
+  "section_financial",
   "amended_from"
  ],
  "fields": [
   {
+   "default": "Issued",
    "fieldname": "status",
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Status",
-   "options": "default Issued",
+   "options": "\nIssued\nIn Progress\nCompleted\nCancelled",
    "reqd": 1
   },
   {
    "fieldname": "section_identity",
-   "fieldtype": "Section Break",
-   "label": "Details"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "project",
@@ -50,38 +52,36 @@
    "fieldname": "wo_no",
    "fieldtype": "Data",
    "label": "Work Order No.",
+   "read_only": 1,
    "unique": 1
   },
   {
    "fieldname": "subcontract",
    "fieldtype": "Data",
-   "label": "Subcontract"
+   "label": "Subcontract",
+   "reqd": 1
   },
   {
    "fieldname": "col_break_ident1",
-   "fieldtype": "Column Break",
-   "label": "Col Break Ident1"
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "subcontractor",
    "fieldtype": "Link",
    "label": "Subcontractor",
-   "options": "Supplier"
+   "options": "Supplier",
+   "reqd": 1
   },
   {
    "fieldname": "scope",
    "fieldtype": "Text",
-   "label": "Scope"
-  },
-  {
-   "fieldname": "wo_items",
-   "fieldtype": "Data",
-   "label": "Wo Items"
+   "label": "Scope",
+   "max_height": "100px",
+   "reqd": 1
   },
   {
    "fieldname": "col_break_ident2",
-   "fieldtype": "Column Break",
-   "label": "Col Break Ident2"
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "method_statement",
@@ -94,29 +94,33 @@
    "label": "Shop Drawing"
   },
   {
+   "default": "Today",
    "fieldname": "issue_date",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Issue Date"
+   "label": "Issue Date",
+   "reqd": 1
   },
   {
    "fieldname": "start_date",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Start Date"
+   "label": "Start Date",
+   "reqd": 1
   },
   {
    "fieldname": "end_date",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "End Date"
+   "label": "End Date",
+   "reqd": 1
   },
   {
    "fieldname": "section_financial",
-   "fieldtype": "Section Break",
-   "label": "Financial Summary (Auto-computed)"
+   "fieldtype": "Section Break"
   },
   {
+   "default": "0",
    "fieldname": "wo_value",
    "fieldtype": "Currency",
    "label": "Wo Value"
@@ -130,17 +134,34 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "WO-.YYYY.-"
+  },
+  {
+   "fieldname": "section_break_fhfs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "wo_items",
+   "fieldtype": "Table",
+   "label": "WO Items",
+   "options": "WO Item",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-05-04 10:47:45.189890",
+ "modified": "2026-05-04 12:38:05.637272",
  "modified_by": "Administrator",
  "module": "Subcontractor Management",
  "name": "SC Work Order",
- "naming_rule": "By fieldname",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

@@ -1,47 +1,48 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:cert_no",
+ "autoname": "naming_series:",
  "creation": "2026-05-04 10:48:12.887840",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "status",
   "section_identity",
-  "project",
   "cert_no",
   "subcontract",
-  "col_break_ident1",
   "sc_bill",
+  "project",
+  "col_break_ident1",
   "subcontractor",
-  "deductions",
+  "cert_date",
+  "certified_amount",
+  "net_payable",
   "col_break_ident2",
   "certified_by",
-  "purchase_invoice",
-  "cert_date",
   "payment_due_date",
-  "section_financial",
-  "certified_amount",
-  "col_break_fin1",
-  "net_payable",
-  "section_notes",
+  "purchase_invoice",
+  "naming_series",
+  "column_break_glnn",
+  "status",
   "remarks",
+  "section_break_xgqp",
+  "deduction",
+  "section_notes",
   "amended_from"
  ],
  "fields": [
   {
+   "default": "Draft",
    "fieldname": "status",
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Status",
-   "options": "default Draft",
+   "options": "\nDraft\nIssued\nPaid",
    "reqd": 1
   },
   {
    "fieldname": "section_identity",
-   "fieldtype": "Section Break",
-   "label": "Details"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "project",
@@ -54,22 +55,24 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Certificate No",
+   "read_only": 1,
    "unique": 1
   },
   {
    "fieldname": "subcontract",
    "fieldtype": "Data",
-   "label": "Subcontract"
+   "label": "Subcontract",
+   "reqd": 1
   },
   {
    "fieldname": "col_break_ident1",
-   "fieldtype": "Column Break",
-   "label": "Col Break Ident1"
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "sc_bill",
    "fieldtype": "Data",
-   "label": "Sc Bill"
+   "label": "Sc Bill",
+   "reqd": 1
   },
   {
    "fieldname": "subcontractor",
@@ -78,14 +81,8 @@
    "options": "Supplier"
   },
   {
-   "fieldname": "deductions",
-   "fieldtype": "Data",
-   "label": "Deductions"
-  },
-  {
    "fieldname": "col_break_ident2",
-   "fieldtype": "Column Break",
-   "label": "Col Break Ident2"
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "certified_by",
@@ -103,7 +100,8 @@
    "fieldname": "cert_date",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Certificate Date"
+   "label": "Certificate Date",
+   "reqd": 1
   },
   {
    "fieldname": "payment_due_date",
@@ -112,34 +110,28 @@
    "label": "Payment Due Date"
   },
   {
-   "fieldname": "section_financial",
-   "fieldtype": "Section Break",
-   "label": "Financial Summary (Auto-computed)"
-  },
-  {
+   "default": "0",
    "fieldname": "certified_amount",
    "fieldtype": "Currency",
-   "label": "Certified Amount"
+   "label": "Certified Amount",
+   "non_negative": 1,
+   "reqd": 1
   },
   {
-   "fieldname": "col_break_fin1",
-   "fieldtype": "Column Break",
-   "label": "Col Break Fin1"
-  },
-  {
+   "default": "0",
    "fieldname": "net_payable",
    "fieldtype": "Currency",
    "label": "Net Payable"
   },
   {
    "fieldname": "section_notes",
-   "fieldtype": "Section Break",
-   "label": "Notes & Justification"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "remarks",
    "fieldtype": "Text",
-   "label": "Remarks"
+   "label": "Remarks",
+   "max_height": "150px"
   },
   {
    "fieldname": "amended_from",
@@ -150,17 +142,37 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "column_break_glnn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_xgqp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "deduction",
+   "fieldtype": "Table",
+   "label": "Deduction",
+   "options": "SC Payment Deduction"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "SCPC-.YYYY.-"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-05-04 10:48:12.887840",
+ "modified": "2026-05-04 12:48:49.958561",
  "modified_by": "Administrator",
  "module": "Subcontractor Management",
  "name": "SC Payment Certificate",
- "naming_rule": "By fieldname",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
