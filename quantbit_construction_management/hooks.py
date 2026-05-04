@@ -42,15 +42,6 @@ fixtures = [
         "doctype": "UOM Conversion Rate"
     },
     {
-        "doctype": "Workflow Action Master"
-    },
-    {
-        "doctype": "Workflow State"
-    },
-    {
-        "doctype": "Workflow"
-    },
-    {
         "doctype": "Role"
     },
     {
@@ -65,7 +56,7 @@ fixtures = [
     {
         "doctype": "Workspace Shortcut"
     },
-      {
+    {
         "dt":"Workflow State" , "filters":
         [
             [
@@ -120,7 +111,7 @@ fixtures = [
             ]
         ]
     },
-        {
+    {
         "dt":"Workflow" , "filters":
         [
             [
