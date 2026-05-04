@@ -662,7 +662,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2026-05-04 11:49:56.036685",
+  "modified": "2026-05-04 14:42:24.473207",
   "module": null,
   "name": "Construction Management System",
   "number_cards": [],
@@ -673,6 +673,20 @@
   "roles": [],
   "sequence_id": 41.0,
   "shortcuts": [
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "UOM Conversion Rate",
+    "link_to": "UOM Conversion Rate",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": null,
+    "type": "DocType",
+    "url": null
+   },
    {
     "color": "Grey",
     "doc_view": "List",
