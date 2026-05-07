@@ -355,6 +355,7 @@ def get_costing(doc):
                     "item": item,
                     "item_name": material.item_name,
                     "total_qty": converted_qty,
+                    "item_uom": material.item_uom,
                     "rate": item_rate,
                     "total_amount": total_amount
                 }
