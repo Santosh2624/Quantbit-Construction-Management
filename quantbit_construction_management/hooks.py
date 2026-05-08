@@ -35,7 +35,7 @@ fixtures = [
     {
         "doctype": "Custom Field",
         "filters": [
-            ["dt", "in", ["Task", "Project"]]
+            ["dt", "in", ["Task", "Project","Item"]]
         ]
     },
 
