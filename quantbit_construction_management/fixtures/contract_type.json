@@ -1,0 +1,37 @@
+[
+ {
+  "contract_type_name": "Lump Sum",
+  "docstatus": 0,
+  "doctype": "Contract Type",
+  "modified": "2026-05-08 11:49:53.294459",
+  "name": "Lump Sum"
+ },
+ {
+  "contract_type_name": "Remeasurement",
+  "docstatus": 0,
+  "doctype": "Contract Type",
+  "modified": "2026-05-08 11:50:22.339133",
+  "name": "Remeasurement"
+ },
+ {
+  "contract_type_name": "Cost Plus",
+  "docstatus": 0,
+  "doctype": "Contract Type",
+  "modified": "2026-05-08 11:50:43.570758",
+  "name": "Cost Plus"
+ },
+ {
+  "contract_type_name": "Design & Build",
+  "docstatus": 0,
+  "doctype": "Contract Type",
+  "modified": "2026-05-08 11:50:53.319643",
+  "name": "Design & Build"
+ },
+ {
+  "contract_type_name": "EPC",
+  "docstatus": 0,
+  "doctype": "Contract Type",
+  "modified": "2026-05-08 11:51:02.730247",
+  "name": "EPC"
+ }
+]

@@ -26,7 +26,8 @@ override_doctype_class = {
 }
 
 doctype_js = {
-  "Project" : "public/js/Project.js"
+  "Project" : "public/js/Project.js",
+  "Task" : "public/js/Task.js"
 }
 
 fixtures = [
@@ -60,6 +61,20 @@ fixtures = [
     {
         "doctype": "Workspace Shortcut"
     },
+    {
+        "doctype": "Item Type"
+    },
+    {
+        "doctype": "Contract Type"
+    },
+   
+    {
+        "dt": "Property Setter",
+        "filters": [
+            ["doc_type", "=", "Task"]
+        ]
+    },
+
     {
         "dt":"Workflow State" , "filters":
         [
@@ -124,12 +139,6 @@ fixtures = [
                     "Tender Creation",
                 ]
             ]
-        ]
-    },
-    {
-        "doctype": "Price List",
-        "filters": [
-            ["name", "=", "Construction Price"]
         ]
     },
 ]

@@ -1,0 +1,30 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Item Type",
+  "item_type_name": "Man",
+  "modified": "2026-05-07 11:24:37.774281",
+  "name": "Man"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Item Type",
+  "item_type_name": "Material",
+  "modified": "2026-05-07 11:24:46.202870",
+  "name": "Material"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Item Type",
+  "item_type_name": "Equipment",
+  "modified": "2026-05-07 11:24:56.674316",
+  "name": "Equipment"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Item Type",
+  "item_type_name": "Other",
+  "modified": "2026-05-08 11:41:45.100973",
+  "name": "Other"
+ }
+]
