@@ -2,24 +2,24 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:boq_no",
+ "autoname": "naming_series:",
  "creation": "2026-04-30 14:25:47.444884",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "section_break_swub",
+  "naming_series",
   "section_identity",
   "project",
   "currency",
-  "boq_no",
   "contract_type",
   "col_break_ident1",
-  "status",
   "title",
   "version",
   "contract_value",
-  "col_break_ident2",
-  "amendment_reason",
+  "section_break_ekvb",
+  "tasks_details",
   "section_boq_items",
   "boq_items",
   "section_approval",
@@ -28,17 +28,11 @@
   "approved_date",
   "section_notes",
   "notes",
-  "amended_from"
+  "amended_from",
+  "column_break_wnbd",
+  "amendment_reason"
  ],
  "fields": [
-  {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Status",
-   "options": "Mandatory\ndefault Draft",
-   "reqd": 1
-  },
   {
    "fieldname": "section_identity",
    "fieldtype": "Section Break",
@@ -64,20 +58,9 @@
   },
   {
    "fieldname": "contract_type",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "label": "Contract Type",
-   "options": "Mandatory\ndefault Lump Sum"
-  },
-  {
-   "fieldname": "boq_no",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "BOQ Number",
-   "unique": 1
-  },
-  {
-   "fieldname": "col_break_ident2",
-   "fieldtype": "Column Break"
+   "options": "Contract Type"
   },
   {
    "fieldname": "title",
@@ -151,17 +134,43 @@
   {
    "fieldname": "column_break_yvxq",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ekvb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tasks_details",
+   "fieldtype": "Table",
+   "label": "Tasks Details",
+   "options": "BOQ Task Details"
+  },
+  {
+   "fieldname": "column_break_wnbd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_swub",
+   "fieldtype": "Section Break",
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "BOQ-.YYYY.-.####"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-05-05 11:25:47.555785",
+ "modified": "2026-05-08 12:03:20.195144",
  "modified_by": "Administrator",
  "module": "BOQ",
  "name": "Bill of Quantities",
- "naming_rule": "By fieldname",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
@@ -191,8 +200,10 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "title",
  "track_changes": 1
 }
