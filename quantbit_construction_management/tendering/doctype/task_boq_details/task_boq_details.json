@@ -48,8 +48,9 @@
    "label": "Qty"
   },
   {
+   "fetch_from": "item.stock_uom",
    "fieldname": "uom",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "UOM",
@@ -74,10 +75,10 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-05-07 11:33:49.593062",
+ "modified": "2026-05-08 17:31:58.034922",
  "modified_by": "Administrator",
  "module": "Tendering",
- "name": "Task BOM Details",
+ "name": "Task BOQ Details",
  "owner": "Administrator",
  "permissions": [],
  "row_format": "Dynamic",

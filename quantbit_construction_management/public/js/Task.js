@@ -5,7 +5,7 @@ frappe.ui.form.on('Task', {
     }
 });
 
-frappe.ui.form.on('Task BOM Details', {
+frappe.ui.form.on('Task BOQ Details', {
 
     qty: function(frm, cdt, cdn) {
         calculate_row_amount(frm, cdt, cdn);

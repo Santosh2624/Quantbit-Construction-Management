@@ -73,7 +73,16 @@ def on_update(doc, method):
 
         doc.db_set("custom_tender_created", tender.name)
 
-        frappe.msgprint(f"Tender {tender.name} created successfully.")
+        frappe.msgprint(
+            msg=f'''
+                Tender created successfully:
+                <a href="/app/tender/{tender.name}">
+                    {tender.name}
+                </a>
+            ''',
+            title="Success",
+            indicator="green"
+        )
 
     except Exception:
         frappe.db.rollback()
