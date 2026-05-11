@@ -242,6 +242,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "columns": 3,
    "fetch_from": "subtask.subject",
    "fieldname": "subtask_name",
    "fieldtype": "Data",
@@ -254,7 +255,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-05-08 12:43:18.471710",
+ "modified": "2026-05-09 12:54:14.919735",
  "modified_by": "Administrator",
  "module": "BOQ",
  "name": "BOQ Item",

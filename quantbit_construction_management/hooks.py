@@ -27,7 +27,8 @@ override_doctype_class = {
 
 doctype_js = {
   "Project" : "public/js/Project.js",
-  "Task" : "public/js/Task.js"
+  "Task" : "public/js/Task.js",
+  "Opportunity" : "public/js/Opportunity.js"
 }
 
 fixtures = [

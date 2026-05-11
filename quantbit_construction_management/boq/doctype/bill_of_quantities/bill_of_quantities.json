@@ -30,7 +30,9 @@
   "notes",
   "amended_from",
   "column_break_wnbd",
-  "amendment_reason"
+  "amendment_reason",
+  "combined_boq_tab",
+  "combined_boq_details"
  ],
  "fields": [
   {
@@ -160,13 +162,23 @@
    "fieldtype": "Select",
    "label": "Naming Series",
    "options": "BOQ-.YYYY.-.####"
+  },
+  {
+   "fieldname": "combined_boq_tab",
+   "fieldtype": "Tab Break",
+   "label": "Combined BOQ"
+  },
+  {
+   "fieldname": "combined_boq_details",
+   "fieldtype": "HTML",
+   "label": "Combined BOQ Details"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-05-08 12:03:20.195144",
+ "modified": "2026-05-08 15:31:07.403852",
  "modified_by": "Administrator",
  "module": "BOQ",
  "name": "Bill of Quantities",

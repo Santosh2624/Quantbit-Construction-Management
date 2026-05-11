@@ -3,7 +3,15 @@
 
 
 frappe.ui.form.on("Tender", {
-    
+    refresh:function(frm){
+        frm.set_query("opportunity_from", function () {
+			return {
+				filters: {
+					name: ["in", ["Customer", "Lead"]],
+				},
+			};
+		});
+    },
     total_ctc: function(frm) {
         calculate_contract_values(frm);
     },
