@@ -12,14 +12,14 @@ frappe.ui.form.on("Tender", {
 			};
 		});
 
-        // Show Create Customer button if conditions are met
+        
         if (frm.doc.show_create_customer_button == 1) {
             frm.add_custom_button(__('Create Customer'), function() {
                 create_customer_from_lead(frm);
             });
         }
 
-        // Show Create Project button when workflow state is "Alloted"
+        
         console.log("Checking workflow state for Create Project button:", frm.doc.workflow_state);
         if (frm.doc.workflow_state == "Alloted") {
             console.log("Adding Create Project button");
@@ -71,7 +71,7 @@ function create_customer_from_lead(frm) {
                     indicator: 'green'
                 });
                 
-                // Refresh the form to show updated values
+                
                 frm.reload_doc();
             }
         },
@@ -84,7 +84,7 @@ function create_customer_from_lead(frm) {
     });
 }
 
-// Make function globally available for testing
+
 window.show_project_creation_dialog = show_project_creation_dialog;
 
 function show_project_creation_dialog(frm) {
@@ -108,7 +108,7 @@ function show_project_creation_dialog(frm) {
         ]
     });
     
-    // Add primary action separately
+    
     d.set_primary_action('Create Project Document', function() {
         console.log("BUTTON CLICKED! Action function is working!");
         console.log("=== DIALOG SUBMIT ACTION STARTED ===");
@@ -139,7 +139,7 @@ function show_project_creation_dialog(frm) {
                             indicator: 'green'
                         });
                         d.hide();
-                        // Refresh the form to show updated state
+                        
                         frm.reload_doc();
                     } else {
                         console.log("ERROR: No response or message from server");
