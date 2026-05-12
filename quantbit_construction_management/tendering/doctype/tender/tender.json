@@ -143,7 +143,9 @@
   "contract_value",
   "net_profit_margin",
   "section_break_tasl",
-  "costing_sheet_details"
+  "costing_sheet_details",
+  "workflow_state",
+  "show_create_customer_button"
  ],
  "fields": [
   {
@@ -204,6 +206,14 @@
    "options": "Open\nQuotation\nConverted\nLost\nReplied\nClosed",
    "print_hide": 1,
    "reqd": 1
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Workflow State",
+   "options": "Workflow State",
+   "read_only": 1
   },
   {
    "fieldname": "column_break0",
@@ -949,13 +959,26 @@
    "fieldtype": "Table",
    "label": "Costing Sheet Details",
    "options": "Costing Sheet Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "show_create_customer_button",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Show Create Customer Button",
+   "print_hide": 1
   }
  ],
  "grid_page_length": 50,
  "icon": "fa fa-info-sign",
  "is_submittable": 1,
- "links": [],
- "modified": "2026-05-04 13:21:16.562989",
+ "links": [
+  {
+   "link_doctype": "Tender",
+   "link_fieldname": "reference_doc_name"
+  }
+ ],
+ "modified": "2026-05-11 19:40:05.057179",
  "modified_by": "Administrator",
  "module": "Tendering",
  "name": "Tender",
@@ -1032,6 +1055,20 @@
    "report": 1,
    "role": "Business Head",
    "share": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],
